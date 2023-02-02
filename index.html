@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripAdvisor</title>
+    <link rel="stylesheet" href="css/index_styles.css">
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet">
+    <script>
+        function toggleScrollLock() {
+            const body = document.querySelector("body");
+            const previousOverflow = body.style.overflow;
+
+            if (previousOverflow === "hidden") {
+                body.style.overflow = "visible";
+            } else {
+                body.style.overflow = "hidden";
+            }
+        }
+
+        const button = document.querySelector("button");
+        button.addEventListener("click", toggleScrollLock);
+    </script>
+</head>
+
+<body>
+    <!-- MODAL -->
+    <div id="login" class="modal-login">
+        <div class="modal-login__content">
+            <div class="logo_texto">
+                <img src="img/mini-logo.png" width="50px" alt="">
+                <h1>Inicia sesión para descubrir lo mejor de Tripadvisor.</h1>
+            </div>
+            <div class="container-modal">
+                <div class="inputs-modal">
+                    <input type="text" placeholder="Correo">
+                    <input type="text" placeholder="Password">
+                </div>
+                <div class="button-modal">
+                    <button type="submit" id="button" class="nav-button">Iniciar Sesión</button>
+                </div>
+                <div class="mensaje-modal">
+                    <p>Aun no estas subscrito?</p>
+                    <a href="#ENVIAR-ARCHIVO-REGISTRO">
+                        <p><b>Unete</b></p>
+                    </a>
+                </div>
+            </div>
+            <a href="#" class="modal-login__close">&times;</a>
+        </div>
+    </div>
+    <!-- CONTENIDO PAGINA -->
+    <div class="nav-menu">
+        <div class="left-menu">
+            <a href="#">
+                <img src="img/logo.png" alt="">
+            </a>
+        </div>
+        <div class="right-menu">
+            <nav>
+                <a href="#login"><button class="nav-button"><i class="lni lni-user"></i> Iniciar Sesión</button></a>
+            </nav>
+        </div>
+    </div>
+    <div class="imagen-inicio">
+        <img src="img/inicio.png" alt="">
+    </div>
+    <div class="cards">
+        <div class="four-column">
+            <img src="img/comida.jpg" alt="">
+        </div>
+        <div class="four-column">
+            <img src="img/comida.jpg" alt="">
+        </div>
+        <div class="four-column">
+            <img src="img/comida.jpg" alt="">
+        </div>
+        <div class="four-column">
+            <img src="img/comida.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
