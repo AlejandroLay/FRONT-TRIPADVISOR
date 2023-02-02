@@ -4,6 +4,12 @@ body {
     padding: 1% 13%;
 }
 
+@media only screen and (max-width: 1200px) {
+    body {
+        padding: 0%;
+    }
+}
+
 :root {
     --main-color: #34e0a1;
 }
@@ -183,6 +189,6 @@ body {
 
 @media only screen and (max-width: 600px) {
     .four-column {
-        width: 80%;
+        width: 100%;
     }
 }
