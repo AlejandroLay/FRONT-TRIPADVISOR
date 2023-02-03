@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 body {
     font-family: 'Montserrat', sans-serif;
-    padding: 1% 13%;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -12,6 +11,10 @@ body {
 
 :root {
     --main-color: #34e0a1;
+}
+
+.padding-body {
+    padding: 1% 13%;
 }
 
 
@@ -157,7 +160,7 @@ body {
 
 .imagen-inicio img {
     width: 100%;
-    margin-top: 3%;
+    margin-top: 1.5%;
 }
 
 
