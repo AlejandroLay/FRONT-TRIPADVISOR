@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tripadvisor</title>
+    <link rel="stylesheet" href="css/admin_styles.css">
+    <!-- MINI-LOGO -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/mini-logo/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/mini-logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/mini-logo/favicon-16x16.png">
+    <link rel="manifest" href="img/mini-logo/site.webmanifest">
+    <link rel="mask-icon" href="img/mini-logo/safari-pinned-tab.svg" color="#34e0a1">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!-- LOGUITOS WEB -->
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- NAV MENU -->
+    <div class="nav-menu padding-body">
+        <div class="left-menu">
+            <a href="#">
+                <img src="img/logo.png" alt="">
+            </a>
+        </div>
+        <div class="right-menu">
+            <nav>
+                <a href="#"><button class="nav-button">Cerrar Sesión</button></a>
+            </nav>
+        </div>
+    </div>
+    <div class="container-tabla padding-body">
+        <div class="grey-box">
+            <div class="box-buscador">
+                <input class="buscador-peliculas" type="text" placeholder="Buscar..." id="buscar">
+            </div>
+            <br>
+            <br>
+            <div style="overflow-x:auto;">
+                <table style="text-align: center; width:100%;">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Username</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="resultado"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
