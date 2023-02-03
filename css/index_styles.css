@@ -3,12 +3,6 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-@media only screen and (max-width: 1200px) {
-    body {
-        padding: 0%;
-    }
-}
-
 :root {
     --main-color: #34e0a1;
 }
@@ -143,7 +137,7 @@ body {
     position: relative;
     width: 400px;
     height: 450px;
-    background: #ffffff;
+    background: white;
     padding: 1em 2em;
 }
 
@@ -169,7 +163,7 @@ body {
 .four-column {
     float: left;
     width: 20%;
-    padding: 2% 2% 0% 2%;
+    margin: 2%;
 }
 
 .cards p {
@@ -190,10 +184,22 @@ body {
     .four-column {
         width: 45%;
     }
+    .padding-body {
+        padding: 0%;
+    }
 }
 
 @media only screen and (max-width: 600px) {
     .four-column {
         width: 100%;
+        margin-top: 5%;
+        margin: 0%;
+    }
+    .modal-login__content {
+        width: 100%;
+        height: 100%;
+    }
+    #login {
+        margin-top: 5%;
     }
 }
