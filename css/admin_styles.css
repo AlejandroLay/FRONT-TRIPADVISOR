@@ -11,16 +11,6 @@ body {
     padding: 1% 13%;
 }
 
-@media only screen and (max-width: 1000px) {
-    .padding-body {
-        padding: 0%;
-    }
-    .box-buscador {
-        text-align: center;
-        margin-top: 5%;
-    }
-}
-
 
 /* ################################### ESTILOS NAV ################################### */
 
@@ -89,7 +79,7 @@ table {
     color: white;
     border-radius: 5px;
     padding: 2%;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .box-buscador {
@@ -106,4 +96,17 @@ table {
     height: 30px;
     padding-left: 10px;
     background-color: white;
+}
+
+
+/* ################################### RESPONSIVE DESIGN ################################### */
+
+@media only screen and (max-width: 1000px) {
+    .padding-body {
+        padding: 0%;
+    }
+    .box-buscador {
+        text-align: center;
+        margin-top: 5%;
+    }
 }

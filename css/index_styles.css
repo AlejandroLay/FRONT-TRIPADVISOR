@@ -1,14 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
-body {
+* {
     font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 0%;
 }
 
 :root {
     --main-color: #34e0a1;
+    --footer-color: #faf1ed;
 }
 
-.padding-body {
-    padding: 1% 13%;
+.padding-nav {
+    margin-top: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.padding-cards {
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 
@@ -104,7 +115,7 @@ body {
 .container-modal .inputs-modal input {
     margin: 2%;
     text-align: center;
-    width: 80%;
+    width: 92%;
     font-size: 15px;
     padding: 3% 6%;
     border-radius: 20px;
@@ -160,51 +171,28 @@ body {
 
 /* ################################### CARDS ################################### */
 
-.four-column {
-    float: left;
-    width: 20%;
-    margin: 2%;
+.cards {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .cards p {
     font-size: 12px;
 }
 
+.four-column {
+    float: left;
+    width: 25%;
+    padding: 1%;
+}
+
+.four-column h3 {
+    margin-top: 3%;
+    padding-bottom: 3%;
+}
+
 .four-column img {
     width: 100%;
-}
-
-@media only screen and (max-width: 1200px) {
-    .four-column {
-        width: 28%;
-        padding: 0% 0% 3% 0%;
-    }
-}
-
-@media only screen and (max-width: 900px) {
-    .four-column {
-        width: 45%;
-        padding: 0% 0% 5% 0%;
-    }
-    .padding-body {
-        padding: 0%;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .four-column {
-        width: 100%;
-        margin-top: 5%;
-        margin: 0%;
-        padding: 0% 0% 15% 0%;
-    }
-    .modal-login__content {
-        width: 100%;
-        height: 100%;
-    }
-    #login {
-        margin-top: 5%;
-    }
 }
 
 
@@ -252,4 +240,87 @@ body {
     position: absolute;
     bottom: 30px;
     right: 50px;
+}
+
+
+/* ################################### FOOTER ################################### */
+
+footer {
+    background-color: var(--footer-color);
+    margin-top: 3%;
+    padding: 1% 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    margin: 0.5%;
+    font-size: 13px;
+}
+
+footer img {
+    width: 3.5%;
+}
+
+
+/* ################################### RESPONSIVE DESIGN ################################### */
+
+@media only screen and (max-width: 1200px) {
+    .four-column {
+        width: 33.33%;
+        padding: 1% 1% 5% 1%;
+    }
+    .four-column h3 {
+        padding-bottom: 3%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .four-column {
+        width: 50%;
+    }
+    .four-column h3 {
+        padding-bottom: 2%;
+    }
+    .padding-cards {
+        margin-top: 3%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .padding-nav {
+        margin-top: 1%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        margin: 1%;
+    }
+    .four-column {
+        width: 100%;
+        padding: 0% 0% 12% 0%;
+    }
+    .four-column h3 {
+        padding-bottom: 2%;
+    }
+    .modal-login__content {
+        width: 100%;
+        height: 100%;
+    }
+    #login {
+        margin-top: 5%;
+    }
+    .padding-nav {
+        margin-top: 1%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .padding-cards {
+        margin-top: 5%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
 }
