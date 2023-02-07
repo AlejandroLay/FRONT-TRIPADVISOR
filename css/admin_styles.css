@@ -106,12 +106,28 @@ table {
 
 /* ################################### RESPONSIVE DESIGN ################################### */
 
+@media only screen and (max-width: 900px) {
+    .padding-nav {
+        margin-top: 1%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+}
+
 @media only screen and (max-width: 1000px) {
+    body {
+        margin: 1%;
+    }
     .padding-body {
         padding: 0%;
     }
     .box-buscador {
         text-align: center;
         margin-top: 5%;
+    }
+    .padding-nav {
+        margin-top: 1%;
+        margin-left: 0%;
+        margin-right: 0%;
     }
 }

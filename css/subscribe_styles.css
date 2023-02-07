@@ -248,12 +248,17 @@
         width: 45%;
         padding: 0% 0% 5% 0%;
     }
-    .padding-body {
-        padding: 0%;
+    .padding-nav {
+        margin-top: 1%;
+        margin-left: 0%;
+        margin-right: 0%;
     }
 }
 
 @media only screen and (max-width: 600px) {
+    body {
+        margin: 1%;
+    }
     .four-column {
         width: 100%;
         margin-top: 5%;
@@ -266,5 +271,10 @@
     }
     #login {
         margin-top: 5%;
+    }
+    .padding-nav {
+        margin-top: 1%;
+        margin-left: 0%;
+        margin-right: 0%;
     }
 }
