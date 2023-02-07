@@ -1,14 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
-body {
+* {
     font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 0%;
 }
 
 :root {
     --main-color: #34e0a1;
+    --footer-color: #faf1ed;
 }
 
-.padding-body {
-    padding: 1% 13%;
+.padding-nav {
+    margin-top: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 
