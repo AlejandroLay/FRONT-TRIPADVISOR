@@ -2,24 +2,16 @@
 * {
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
-    margin: 0%;
 }
 
-:root {
+ :root {
     --main-color: #34e0a1;
     --footer-color: #faf1ed;
 }
 
-.padding-nav {
-    margin-top: 1%;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.padding-cards {
-    margin-top: 2%;
-    margin-left: 10%;
-    margin-right: 10%;
+.padding-body {
+    margin-left: 13%;
+    margin-right: 13%;
 }
 
 
@@ -48,34 +40,18 @@
 /* ################################### BOTON NAV ################################### */
 
 .nav-button {
-    appearance: none;
-    background-color: white;
+    background-color: black;
+    color: white;
     border: 2px solid white;
-    border-radius: 20px;
-    box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
-    box-sizing: border-box;
-    color: #24292E;
-    cursor: pointer;
-    display: inline-block;
+    border-radius: 25px;
     font-size: 15px;
-    line-height: 20px;
-    list-style: none;
-    padding: 6px 16px;
-    position: relative;
-    transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    vertical-align: middle;
-    white-space: nowrap;
-    word-wrap: break-word;
+    cursor: pointer;
+    padding: 10px 20px;
 }
 
 .nav-button:hover {
-    background-color: black;
+    background-color: rgb(40, 40, 40);
     color: white;
-    text-decoration: none;
-    transition-duration: 0.1s;
 }
 
 
@@ -169,137 +145,155 @@
 }
 
 
-/* ################################### IMAGEN INICIO ################################### */
+/* ################################### FOUR BUTTONS ################################### */
 
-.imagen-inicio img {
-    width: 100%;
-    margin-top: 1.5%;
-}
-
-
-/* ################################### CARDS ################################### */
-
-.cards {
+.four-buttons {
     display: flex;
-    flex-wrap: wrap;
+    overflow-y: hidden;
+    margin-top: 2%;
+    margin-left: 13%;
+    margin-right: 13%;
 }
 
-.cards p {
-    font-size: 12px;
-}
-
-.four-column {
-    float: left;
-    width: 25%;
-    padding: 1%;
-}
-
-.four-column h3 {
-    margin-top: 3%;
-    padding-bottom: 3%;
-}
-
-.four-column img {
-    width: 100%;
-}
-
-
-/* ################################### STARS ################################### */
-
-.star-wrapper {
-    position: absolute;
-    direction: rtl;
-}
-
-.star-wrapper a {
-    font-size: 1em;
+.four-buttons button {
+    background-color: white;
     color: black;
-    text-decoration: none;
-    transition: all 0.5s;
-    margin: 1px;
+    width: 177px;
+    padding: 12px 1px 30px 1px;
+    border: 1px solid black;
+    border-radius: 12px;
+    margin: 5px;
+    text-align: center;
 }
 
-.star-wrapper a:hover {
-    color: gold;
-    transform: scale(1.3);
+.four-buttons button:hover {
+    background-color: black;
+    color: white;
+    width: 177px;
+    padding: 10px 1px 30px 1px;
+    border: 1px solid black;
+    border-radius: 12px;
+    margin: 5px;
 }
 
-.s1:hover~a {
-    color: gold;
-}
-
-.s2:hover~a {
-    color: gold;
-}
-
-.s3:hover~a {
-    color: gold;
-}
-
-.s4:hover~a {
-    color: gold;
-}
-
-.s5:hover~a {
-    color: gold;
-}
-
-.wraper {
-    position: absolute;
-    bottom: 30px;
-    right: 50px;
+.four-buttons i {
+    margin-left: 15%;
 }
 
 
-/* ################################### FOOTER ################################### */
+/* ################################### BUSCADOR ################################### */
 
-footer {
-    background-color: var(--footer-color);
-    margin-top: 3%;
-    padding: 1% 10%;
+.buscador {
+    margin-top: 25px;
+    background-image: url('../img/inicio.png');
+    background-size: cover;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-footer p {
-    margin: 0.5%;
-    font-size: 13px;
+.buscador input[type="search"] {
+    height: 60px;
+    width: 70%;
+    font-size: 18px;
+    border: none;
+    padding-left: 50px;
+    border-radius: 100px;
+    background-color: white;
 }
 
-footer img {
-    width: 3%;
+.buscador input:focus {
+    outline: none;
+}
+
+.iconnameleft {
+    position: relative;
+    font-size: 1.3em;
+    z-index: 1;
+    left: 20px;
+    color: black;
+    cursor: pointer;
+    width: 0;
+}
+
+
+/* ################################### MENSAJE RESTAURANTES ################################### */
+
+.buscar-restaurantes {
+    margin-top: 25px;
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(0, 0, 0, 0.73)), url('../img/foto-restaurante.jpg');
+    background-size: cover;
+    height: 500px;
+    padding: 340px 0px 0px 20px;
+}
+
+.buscar-restaurantes h1 {
+    font-size: 40px;
+    color: white;
+    margin: 0;
+}
+
+.buscar-restaurantes p {
+    padding-top: 0%;
+    font-size: 17px;
+    color: white;
+    margin-top: 0.5%;
+    margin-bottom: 2%;
+}
+
+.boton-restaurantes {
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 25px;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 10px 20px;
 }
 
 
 /* ################################### RESPONSIVE DESIGN ################################### */
 
 @media only screen and (max-width: 1200px) {
-    .four-column {
-        width: 33.33%;
-        padding: 1% 1% 5% 1%;
+    .four-buttons {
+        margin-top: 2%;
+        margin-left: 15%;
+        margin-right: 15%;
     }
-    .four-column h3 {
-        padding-bottom: 3%;
+    body {
+        margin: 1%;
     }
 }
 
 @media only screen and (max-width: 900px) {
-    .four-column {
-        width: 50%;
+    body {
+        margin: 1%;
     }
-    .four-column h3 {
-        padding-bottom: 2%;
-    }
-    .padding-cards {
-        margin-top: 3%;
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-    .padding-nav {
+    .padding-body {
         margin-top: 1%;
         margin-left: 0%;
         margin-right: 0%;
+    }
+    .buscador {
+        height: 200px;
+        margin-top: 30px;
+    }
+    .four-buttons {
+        padding-top: 15px;
+        margin: 0%;
+    }
+    .four-buttons button {
+        width: 200px;
+        padding: 8px 0px;
+        text-align: center;
+    }
+    .four-buttons button:hover {
+        width: 200px;
+        padding: 8px 0px;
+        text-align: center;
+    }
+    .buscar-restaurantes {
+        padding: 280px 0px 0px 20px;
     }
 }
 
@@ -307,28 +301,38 @@ footer img {
     body {
         margin: 1%;
     }
-    .four-column {
-        width: 100%;
-        padding: 0% 0% 12% 0%;
-    }
-    .four-column h3 {
-        padding-bottom: 2%;
-    }
     .modal-login__content {
         width: 100%;
         height: 100%;
     }
+    .four-buttons {
+        margin: 0%;
+    }
     #login {
         margin-top: 5%;
     }
-    .padding-nav {
-        margin-top: 1%;
+    .padding-body {
+        margin-top: 2%;
         margin-left: 0%;
         margin-right: 0%;
     }
-    .padding-cards {
-        margin-top: 5%;
-        margin-left: 0%;
-        margin-right: 0%;
+    .buscador {
+        height: 200px;
+        margin-top: 20px;
+    }
+    .buscador input[type="search"] {
+        font-size: 15px;
+    }
+    .iconnameleft {
+        position: relative;
+        font-size: 1em;
+        z-index: 1;
+        left: 20px;
+        color: black;
+        cursor: pointer;
+        width: 0;
+    }
+    .buscar-restaurantes {
+        padding: 200px 0px 0px 20px;
     }
 }
