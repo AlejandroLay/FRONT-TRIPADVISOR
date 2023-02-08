@@ -149,6 +149,8 @@
 
 .four-buttons {
     display: flex;
+    justify-content: center;
+    align-items: center;
     overflow-y: hidden;
     margin-top: 2%;
     margin-left: 13%;
@@ -157,23 +159,27 @@
 
 .four-buttons button {
     background-color: white;
-    color: black;
-    width: 177px;
+    width: 170px;
     padding: 12px 1px 30px 1px;
     border: 1px solid black;
     border-radius: 12px;
     margin: 5px;
     text-align: center;
+    font-size: 15px;
+    cursor: pointer;
 }
 
 .four-buttons button:hover {
     background-color: black;
     color: white;
-    width: 177px;
-    padding: 10px 1px 30px 1px;
+    width: 170px;
+    padding: 12px 1px 30px 1px;
     border: 1px solid black;
     border-radius: 12px;
     margin: 5px;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
 }
 
 .four-buttons i {
@@ -221,11 +227,15 @@
 /* ################################### MENSAJE RESTAURANTES ################################### */
 
 .buscar-restaurantes {
+    display: flex;
     margin-top: 25px;
-    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(0, 0, 0, 0.73)), url('../img/foto-restaurante.jpg');
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(0, 0, 0, 0.73)), url(../img/foto-restaurante.jpg);
     background-size: cover;
     height: 500px;
-    padding: 340px 0px 0px 20px;
+    padding: 300px 0px 0px 20px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .buscar-restaurantes h1 {
