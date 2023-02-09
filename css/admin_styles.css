@@ -2,18 +2,16 @@
 * {
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
-    margin: 0%;
 }
 
-:root {
+ :root {
     --main-color: #34e0a1;
     --footer-color: #faf1ed;
 }
 
-.padding-nav {
-    margin-top: 1%;
-    margin-left: 10%;
-    margin-right: 10%;
+.padding-body {
+    margin-left: 13%;
+    margin-right: 13%;
 }
 
 
@@ -42,34 +40,18 @@
 /* ################################### BOTON NAV ################################### */
 
 .nav-button {
-    appearance: none;
-    background-color: white;
+    background-color: black;
+    color: white;
     border: 2px solid white;
-    border-radius: 20px;
-    box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
-    box-sizing: border-box;
-    color: #24292E;
-    cursor: pointer;
-    display: inline-block;
+    border-radius: 25px;
     font-size: 15px;
-    line-height: 20px;
-    list-style: none;
-    padding: 6px 16px;
-    position: relative;
-    transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    vertical-align: middle;
-    white-space: nowrap;
-    word-wrap: break-word;
+    cursor: pointer;
+    padding: 10px 20px;
 }
 
 .nav-button:hover {
-    background-color: black;
+    background-color: rgb(40, 40, 40);
     color: white;
-    text-decoration: none;
-    transition-duration: 0.1s;
 }
 
 
@@ -104,29 +86,67 @@ table {
 }
 
 
+/* ################################### BOTONES ################################### */
+
+.btn-crear {
+    background-color: var(--main-color);
+    color: white;
+    border: 2px solid black;
+    border-radius: 25px;
+    font-size: 10px;
+    cursor: pointer;
+    padding: 8px 10px;
+}
+
+.btn-eliminar {
+    background-color: red;
+    color: white;
+    border: 2px solid black;
+    border-radius: 25px;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 15px 20px;
+}
+
+.btn-editar {
+    background-color: rgb(255, 225, 0);
+    border: 2px solid black;
+    border-radius: 25px;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 15px 20px;
+}
+
+
 /* ################################### RESPONSIVE DESIGN ################################### */
 
-@media only screen and (max-width: 900px) {
-    .padding-nav {
-        margin-top: 1%;
-        margin-left: 0%;
-        margin-right: 0%;
+@media only screen and (max-width: 1200px) {
+    body {
+        margin: 1%;
     }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 900px) {
     body {
         margin: 1%;
     }
     .padding-body {
-        padding: 0%;
+        margin-top: 1%;
+        margin-left: 0%;
+        margin-right: 0%;
     }
     .box-buscador {
         text-align: center;
         margin-top: 5%;
     }
-    .padding-nav {
-        margin-top: 1%;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        margin: 1%;
+    }
+    .padding-body {
+        margin-top: 2%;
         margin-left: 0%;
         margin-right: 0%;
     }

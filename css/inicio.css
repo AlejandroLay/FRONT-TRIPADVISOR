@@ -101,13 +101,11 @@
     background-color: #f2f2f2;
     display: flex;
     margin-top: 35px;
-    padding: 0% 12%;
+    padding: 2% 12% 0% 12%;
 }
 
 .filtro {
-    margin-top: 4%;
-    margin-left: 2%;
-    margin-right: 2%;
+    width: 20%;
     background-color: white;
     border-radius: 3px;
     border: 1px solid #cacaca;
@@ -122,10 +120,7 @@
 }
 
 .iframe-maps {
-    margin-top: 30px;
-    margin-left: 6%;
-    margin-right: 6%;
-    margin-bottom: 20px;
+    padding: 4%;
 }
 
 .checkboxs {
@@ -141,14 +136,14 @@
 
 .contenido {
     width: 80%;
-    margin-top: 3%;
-    margin-left: 2%;
-    margin-right: 2%;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .four-images {
-    margin: 2%;
+    width: 25%;
+    padding: 1% 0.7%;
 }
 
 .four-images h4 {
@@ -157,11 +152,11 @@
 }
 
 .four-images img {
-    width: 22%;
+    width: 100%;
 }
 
 .texto-estrellas {
-    margin-left: 10px;
+    margin-left: 5%;
 }
 
 
@@ -244,28 +239,28 @@
 }
 
 .star-wrapper a:hover {
-    color: gold;
+    color: #08ac6c;
     transform: scale(1.3);
 }
 
 .s1:hover~a {
-    color: gold;
+    color: #08ac6c;
 }
 
 .s2:hover~a {
-    color: gold;
+    color: #08ac6c;
 }
 
 .s3:hover~a {
-    color: gold;
+    color: #08ac6c;
 }
 
 .s4:hover~a {
-    color: gold;
+    color: #08ac6c;
 }
 
 .s5:hover~a {
-    color: gold;
+    color: #08ac6c;
 }
 
 .wraper {
@@ -292,6 +287,10 @@
         margin-left: 0%;
         margin-right: 0%;
     }
+    .four-images {
+        width: 50%;
+        margin-top: 5%;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -302,5 +301,9 @@
         margin-top: 2%;
         margin-left: 0%;
         margin-right: 0%;
+    }
+    .four-images {
+        width: 100%;
+        margin-top: 8%;
     }
 }

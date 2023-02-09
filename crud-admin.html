@@ -16,12 +16,12 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
     <!-- LOGUITOS WEB -->
-    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2b5286e1aa.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!-- NAVBAR -->
-    <div class="nav-menu padding-nav">
+    <div class="nav-menu padding-body">
         <div class="left-menu">
             <a href="index.html">
                 <img src="img/logo.png" alt="">
@@ -29,29 +29,28 @@
         </div>
         <div class="right-menu">
             <nav>
-                <a href="#login"><button class="nav-button"><i class="lni lni-user"></i> Iniciar Sesión</button></a>
+                <a href="#login"><button class="nav-button"><b>Iniciar Sesión</b></button></a>
             </nav>
         </div>
     </div>
-    <div class="container-tabla padding-nav">
+    <div class="container-tabla padding-body">
         <div class="grey-box">
             <div class="box-buscador">
                 <input class="buscador-peliculas" type="text" placeholder="Buscar..." id="buscar">
+                <button class="btn-crear"><i class="fa-solid fa-plus"></i></button>
             </div>
             <br>
             <br>
             <div style="overflow-x:auto;">
                 <table style="text-align: center; width:100%;">
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Nombre</th>
-                            <th>Apellido</th>
-                            <th>Username</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody id="resultado"></tbody>
+                    <tr>
+                        <th>Contact</th>
+                        <th>Country</th>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-editar"><i class="fa-solid fa-pen-to-square"></i></button></td>
+                        <td><button class="btn-eliminar"><i class="fa-solid fa-trash"></i></button></td>
+                    </tr>
                 </table>
             </div>
         </div>
