@@ -6,7 +6,7 @@
 
  :root {
     --main-color: #34e0a1;
-    --footer-color: #faf1ed;
+    --footer-color: #fcf4ec;
 }
 
 .padding-body {
@@ -34,6 +34,70 @@
     width: 100%;
     align-items: center;
     justify-content: right;
+}
+
+
+/* ################################### BOTON NAV ################################### */
+
+.nav-button {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 25px;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.nav-button:hover {
+    background-color: rgb(40, 40, 40);
+    color: white;
+}
+
+
+/* ################################### FOUR BUTTONS ################################### */
+
+.restaurantes {
+    margin-top: 2%;
+}
+
+.four-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    margin-top: 2%;
+    margin-left: 13%;
+    margin-right: 13%;
+}
+
+.four-buttons button {
+    background-color: white;
+    width: 170px;
+    padding: 12px 1px 30px 1px;
+    border: 1px solid black;
+    border-radius: 12px;
+    margin: 5px;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.four-buttons button:hover {
+    background-color: black;
+    color: white;
+    width: 170px;
+    padding: 12px 1px 30px 1px;
+    border: 1px solid black;
+    border-radius: 12px;
+    margin: 5px;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.four-buttons i {
+    margin-left: 15%;
 }
 
 
@@ -74,11 +138,36 @@
 }
 
 
-/* ################################### BOTON NAV ################################### */
+/* ################################### MENSAJE RESTAURANTES ################################### */
 
-.nav-button {
-    background-color: black;
+.buscar-restaurantes {
+    display: flex;
+    margin-top: 25px;
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(0, 0, 0, 0.73)), url(../img/foto-restaurante.jpg);
+    background-size: cover;
+    height: 500px;
+    padding: 300px 0px 0px 20px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.buscar-restaurantes h1 {
+    font-size: 40px;
     color: white;
+    margin: 0;
+}
+
+.buscar-restaurantes p {
+    padding-top: 0%;
+    font-size: 17px;
+    color: white;
+    margin-top: 0.5%;
+    margin-bottom: 2%;
+}
+
+.boton-restaurantes {
+    background-color: white;
     border: 2px solid white;
     border-radius: 25px;
     font-size: 15px;
@@ -86,137 +175,40 @@
     padding: 10px 20px;
 }
 
-.nav-button:hover {
-    background-color: rgb(40, 40, 40);
-    color: white;
+
+/* ################################### RESTAURANTES TOP ################################### */
+
+.mensaje-tops-restaurantes {
+    padding: 2% 0% 0% 0.5%;
 }
 
-
-/* ################################### CONTENIDO ################################### */
-
-.container {
-    background-color: #f2f2f2;
-    display: flex;
-    margin-top: 35px;
-    padding: 2% 12% 0% 12%;
-}
-
-.filtro {
-    width: 20%;
-    background-color: white;
-    border-radius: 3px;
-    border: 1px solid #cacaca;
-}
-
-.filtro hr {
-    margin-left: 6%;
-    margin-right: 6%;
-    border: 1px;
-    height: 1px;
-    background-color: #cacaca;
-}
-
-.iframe-maps {
-    padding: 4%;
-}
-
-.checkboxs {
-    margin-top: 8%;
-    margin-left: 6%;
-    margin-right: 6%;
-}
-
-.checkboxs h1 {
+.msg-secundario {
     font-size: 15px;
-    margin-bottom: 15px;
 }
 
-.contenido {
-    width: 80%;
+.msg-principal {
+    font-size: 23px;
+    margin: 0;
+}
+
+.restaurantes {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .four-images {
     width: 25%;
-    padding: 1% 0.7%;
+    padding: 0% 0.7%;
 }
 
 .four-images h4 {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
 .four-images img {
     width: 100%;
-}
-
-.texto-estrellas {
-    margin-left: 5%;
-}
-
-
-/* ################################### CHECKBOX DESIGN ################################### */
-
-.box {
-    display: block;
-    position: relative;
-    padding-left: 25px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 15px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-.box input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-}
-
-.checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 18px;
-    width: 18px;
-    background-color: #eee;
-}
-
-.box:hover input~.checkmark {
-    background-color: black;
-}
-
-.box input:checked~.checkmark {
-    background-color: black;
-}
-
-.checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-}
-
-.box input:checked~.checkmark:after {
-    display: block;
-}
-
-.box .checkmark:after {
-    left: 6px;
-    top: 3px;
-    width: 3px;
-    height: 6px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
 }
 
 
@@ -267,11 +259,69 @@
 }
 
 
+/* ################################### FOOTER ################################### */
+
+.footer {
+    background: var(--footer-color);
+    padding: 30px 0px;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.footer .row {
+    width: 100%;
+    margin: 1% 0%;
+    padding: 0.6% 0%;
+    color: black;
+    font-size: 0.8em;
+}
+
+.footer .row a {
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+.footer .row ul {
+    width: 100%;
+}
+
+.footer .row ul li {
+    display: inline-block;
+    margin: 0px 30px;
+}
+
+.footer .row a i {
+    font-size: 2em;
+    margin: 0% 1%;
+}
+
+@media (max-width:720px) {
+    .footer {
+        text-align: left;
+        padding: 5%;
+    }
+    .footer .row ul li {
+        display: block;
+        margin: 10px 0px;
+        text-align: left;
+    }
+    .footer .row a i {
+        margin: 0% 3%;
+    }
+}
+
+
 /* ################################### RESPONSIVE DESIGN ################################### */
 
 @media only screen and (max-width: 1200px) {
     body {
         margin: 1%;
+    }
+    .four-buttons {
+        margin-top: 2%;
+        margin-left: 15%;
+        margin-right: 15%;
     }
 }
 
@@ -284,15 +334,33 @@
         margin-left: 0%;
         margin-right: 0%;
     }
+    .buscador {
+        height: 200px;
+        margin-top: 30px;
+    }
+    .four-buttons {
+        padding-top: 15px;
+        margin: 0%;
+    }
+    .four-buttons button {
+        width: 200px;
+        padding: 8px 0px;
+        text-align: center;
+    }
+    .four-buttons button:hover {
+        width: 200px;
+        padding: 8px 0px;
+        text-align: center;
+    }
+    .buscar-restaurantes {
+        padding: 280px 0px 0px 20px;
+    }
     .four-images {
         width: 50%;
         margin-top: 5%;
     }
-    .filtro {
-        width: 100%;
-    }
-    .contenido {
-        width: 100%;
+    .footer {
+        margin-top: 5%;
     }
 }
 
@@ -300,19 +368,45 @@
     body {
         margin: 1%;
     }
+    .modal-login__content {
+        width: 100%;
+        height: 100%;
+    }
+    .four-buttons {
+        margin: 0%;
+    }
+    #login {
+        margin-top: 5%;
+    }
     .padding-body {
         margin-top: 2%;
         margin-left: 0%;
         margin-right: 0%;
     }
+    .buscador {
+        height: 200px;
+        margin-top: 20px;
+    }
+    .buscador input[type="search"] {
+        font-size: 15px;
+    }
+    .iconnameleft {
+        position: relative;
+        font-size: 1em;
+        z-index: 1;
+        left: 20px;
+        color: black;
+        cursor: pointer;
+        width: 0;
+    }
+    .buscar-restaurantes {
+        padding: 200px 0px 0px 20px;
+    }
     .four-images {
         width: 100%;
         margin-top: 8%;
     }
-    .filtro {
-        width: 100%;
-    }
-    .contenido {
-        width: 100%;
+    .footer {
+        margin-top: 8%;
     }
 }
